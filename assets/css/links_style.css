@@ -1,0 +1,32 @@
+.containerLinks {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  width: auto;
+}
+
+.imgbar {
+  position: absolute;
+  top: 50px;
+  left: -35px;
+  width: auto;
+  display: none;
+}
+
+.imgbar ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+} 
+  
+.imgbar li {
+  display: inline-block;
+}
+  
+.imgbar a {
+  width: 100px;
+  display: block;
+  padding: 5px 5px;
+  text-align: center;
+}

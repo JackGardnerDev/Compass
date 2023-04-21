@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compass Index - To Do, Weather, Brave & Google Searches, Quick Links, Clock">
+    <meta name="author" content="Jack Gardner">
+    <title>Compass</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+
+    <script src="https://kit.fontawesome.com/39ebcef0ea.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/background_style.css" rel="stylesheet">
+    <link href="assets/css/clock_style.css" rel="stylesheet">
+    <link href="assets/css/weather_style.css" rel="stylesheet">
+    <link href="assets/css/todo_style.css" rel="stylesheet">
+    <link href="assets/css/browse_style.css" rel="stylesheet">
+    <link href="assets/css/links_style.css" rel="stylesheet">
+
+    <script defer src="assets/js/background_script.js"></script>
+    <script defer src="assets/js/clock_script.js"></script>
+    <script defer src="assets/js/weather_script.js"></script>
+    <script defer src="assets/js/todo_script.js"></script>
+    <script defer src="assets/js/links_script.js"></script>
+
+</head>
+<body>
+    
+<!-- clock -->
+<!-- digital -->
+
+<div class="containerClock">
+    <div class="time">
+        <span id="clock"></span>
+    </div>
+</div>
+
+<!-- weather -->
+
+<div class="containerWeather">
+
+    <div class="container">
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Enter your location">
+            <button class="fa-solid fa-magnifying-glass"></button>
+        </div>
+
+        <div class="not-found">
+            <img src="img/404.png">
+            <p>Oops! Invalid location :/</p>
+        </div>
+
+        <div class="weather-box">
+            <img src="">
+            <p class="temperature"></p>
+            <p class="description"></p>
+        </div>
+
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="fa-solid fa-water"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="wind">
+                <i class="fa-solid fa-wind"></i>
+                <div class="text">
+                    <span></span>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- quick links -->
+<!-- font awesome compass icon triggers show/hide -->
+
+<div class="containerLinks">
+
+    <i id="compass" class="fa-regular fa-compass fa-2xl"></i>
+
+    <div id="imgbar" class="imgbar">
+        <ul>
+            <li><a href="https://www.youtube.com/"><img src="img/youtube.png" alt="YouTube Logo" style="width:50px;"></a></li>
+            <li><a href="https://www.netflix.com/browse"><img src="img/netflix.png" alt=" Netflix Logo" style="width:50px;"></a></li>
+            <li><a href="https://www.disneyplus.com/en-gb/home"><img src="img/disney.png" alt="Disney Logo" style="width:50px;"></a></li>
+            <li><a href="https://play.stan.com.au/"><img src="img/stan.png" alt="Stan Logo" style="width:50px;"></a></li>
+        </ul>
+    </div>
+
+</div>
+
+<!-- to do -->
+
+<div class="containerToDo">
+	<header>
+		<h1>Tasks</h1>
+		<form id="new-task-form">
+			<input 
+				type="text" 
+				name="new-task-input" 
+				id="new-task-input" 
+				placeholder="To Do..."/>
+			<input 
+				type="submit"
+				id="new-task-submit" 
+				value="Add task" />
+		</form>
+	</header>
+	<main>
+		<section class="task-list">
+			<h2>Current Tasks:</h2>
+
+			<div id="tasks">
+
+				<!-- <div class="task">
+					<div class="content">
+						<input 
+							type="text" 
+							class="text" 
+							value="A new task"
+							readonly>
+					</div>
+					<div class="actions">
+						<button class="edit">Edit</button>
+						<button class="delete">Delete</button>
+					</div>
+				</div> -->
+
+			</div>
+		</section>
+	</main>
+</div>
+
+<!-- browsers -->
+<!-- small bottom left font awesome icons -->
+
+<div class="containerBrowse">
+    <div class="img">
+        <a href="https://www.google.com/search"><div class="hover-animation-google"><img class="img-back" src="img/googleLight.png" alt="GoogleActive" style="width:50px;height:50px;"><img class="img-front" src="img/googleDark.png" alt="Google" style="width:50px;height:50px;"></div></a>
+        <a href="https://search.brave.com"><div class="hover-animation-brave"><img class="img-back" src="img/braveLight.png" alt="BraveActive" style="width:50px;height:50px;"><img class="img-front" src="img/braveDark.png" alt="Brave" style="width:50px;height:50px;"></div></a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+.containerBrowse {
+    position: absolute;
+    bottom: 75px;
+    left: 25px;
+    width: auto;
+}
+
+.containerBrowse .img {
+    float: left;
+    padding: 2.5px 2.5px;
+}
+
+.hover-animation-google img {
+    position: absolute;
+    left: 0;
+    padding: 0px 0px;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-animation-google img.img-front:hover {
+    opacity:0;
+    cursor: pointer;
+}
+
+.hover-animation-brave img {
+    position: absolute;
+    left: 70px;
+    padding: 0px 0px;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hover-animation-brave img.img-front:hover {
+    opacity:0;
+    cursor: pointer;
+}

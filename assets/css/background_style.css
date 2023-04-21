@@ -1,0 +1,6 @@
+body {
+    font-family: 'Julius Sans One', sans-serif, Arial, Helvetica;
+    background-image: url(img/background-1.png);
+    color: #800080;
+    background-color: var(--dark);
+}
